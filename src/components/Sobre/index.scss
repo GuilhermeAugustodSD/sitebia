@@ -1,0 +1,75 @@
+.sectionSobre {
+
+  width: 100%;
+  height: 650px;
+  // padding: 40px 0; 
+  background-color: var(--bg-preto);
+  color: var(--bg-branco);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+
+
+  .containerImage {
+    height: 100%;
+    
+    &::before {
+      content: '';
+      background: linear-gradient(-90deg, rgb(26, 25, 25) 6%, rgba(26, 25, 25, 0.8995973389) 14%, rgba(26, 25, 25, 0) 112%);
+      width: 480px;
+      height: 650px;
+      position: absolute;
+      z-index: 99;
+    }
+    img {
+      object-fit: cover;
+      // background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8995973389355743) 27%, rgba(0,0,0,0) 100%);
+      position: relative;
+
+    }
+  }
+
+  .words {
+    max-width: 786px;
+    height: fit-content;
+    width: 100%;
+    color: var(--bg-preto);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      color: var(--bg-branco);
+      font-family: var(--font-playfar);
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--bg-branco);
+      font-family: var(--font-raleway);
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 20px;
+      a {
+        svg {
+          cursor: pointer;
+          transition: all ease 1s;
+          &:hover {
+            transform: translateY(-6px);
+          }
+          path {
+            fill: var(--primary-color);
+          }
+        } 
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+// @import '@/src/styles/breakpoints';
+
+.componentHeader {
+	background-color: var(--bg-preto);
+	color: var(--bg-branco);
+	padding: 8px var(--padding-x);
+	min-height: 56px;
+	position: sticky;
+	top: 0;
+	z-index: 99999;
+	min-height: 85px;
+	overflow: hidden;
+
+	display: grid;
+	grid-template-columns: 400px 1fr 70px;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+
+
+	@media (max-width: 1420px) {
+		grid-template-columns: 400px 70px 50px;
+		padding: 8px 16px;
+	}
+
+	.componentLogo {
+		width: 250px;
+		height: auto;
+		transition: .3s;
+
+		&.logoIcon {
+			width: 50px !important;
+			transition: .8s;
+
+			img {
+				object-fit: contain;
+			}
+		}
+
+		.logo {
+			width: inherit;
+			height: inherit;
+
+			img {
+				width: inherit;
+				height: inherit;
+			}
+		}
+	}
+
+	nav {
+
+		@media (max-width: 1420px) {
+			display: none;
+		}
+
+		ul {
+			display: flex;
+			gap: 40px;
+
+			li {
+				a {
+					font-family: var(--font-playfar);
+					font-weight: 700;
+					font-size: 20px;
+					color: var(--bg-branco);
+					transition: .8s;
+
+					&:hover {
+						color: var(--primary-color);
+					}
+				}
+			}
+		}
+	}
+
+	.containerLinguagem {
+		width: max-content;
+		font-family: var(--font-playfar);
+		font-weight: 700;
+		font-size: 20px;
+		display: flex;
+		gap: 10px;
+
+		span {
+			cursor: pointer;
+
+		}
+
+	}
+
+	.menu {
+		display: none;
+
+		@media (max-width: 1420px) {
+			display: block;
+			cursor: pointer;
+		}
+	}
+}
