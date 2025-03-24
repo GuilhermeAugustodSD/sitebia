@@ -9,6 +9,12 @@
 	color: var(--bg-branco);
 	padding: 32px 24px;
 
+	@media(max-width: 768px) {
+		height: calc(100vh - 60px);
+		top: 60px;
+
+	}
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
