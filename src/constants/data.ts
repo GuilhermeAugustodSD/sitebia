@@ -7,6 +7,13 @@ const dataConst: dataConstTypes = {
       "firstDescription": "Law firm specializing in corporate business law, contracts, succession planning and capital markets, located in the heart of Brazil, combines vast academic and professional experience and offers in-depth theoretical knowledge and up-to-date legal practices, with a focus on personalized solutions for the success and growth of customers.",
       "secondDescription": "Providing a safe haven for legal issues, with advice guided by a commitment to innovation that anticipates trends. Serving both established companies and startups, it promotes sustainable growth through consultancy and legal representation that transcends the traditional, bringing personalized solutions reflecting a genuine dedication to client success."
     },
+    "navegacao": [
+      {"label": "Home", "link": "home"},
+      {"label": "Vision", "link": "visao"},
+      {"label": "Areas", "link": "areas-de-atuacao"},
+      {"label": "About", "link": "sobre"},
+      {"label": "Contact Us", "link": "contato"}
+    ],
     "depoimentos": [
       {
         "empresa": "Eletrobrás",
@@ -50,6 +57,13 @@ const dataConst: dataConstTypes = {
       "firstDescription": "Advocacia especializada em direito empresarial societário, contratos, planejamento sucessório e mercado de capitais, localizada no coração do Brasil, combina vasta experiência acadêmica e profissional e oferece conhecimento teórico profundo e práticas legais atualizadas, com um enfoque em soluções personalizadas para o sucesso e crescimento dos clientes.",
       "secondDescription": "Proporcionando um porto seguro para questões legais, com conselhos guiados pelo comprometimento com a inovação que antecipam tendências. Atendendo tanto empresas estabelecidas quanto startups, promove crescimento sustentável através de consultoria e representação legal que transcende o tradicional, trazendo soluções personalizadas refletindo uma dedicação genuína ao sucesso do cliente."
     },
+    "navegacao": [
+      {"label": "Inicio", "link": "home"},
+      {"label": "Visão", "link": "visao"},
+      {"label": "Áreas de Atuação", "link": "areas-de-atuacao"},
+      {"label": "Sobre", "link": "sobre"},
+      {"label": "Entre em Contato", "link": "contato"}
+    ],
     "depoimentos": [
       {
         "empresa": "Eletrobrás",

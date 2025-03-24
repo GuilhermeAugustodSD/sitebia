@@ -59,3 +59,42 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .sectionEquipe {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+
+    .words {
+      max-width: 100%;
+      text-align: center;
+      gap: 24px;
+      order: 1;
+
+      h2 {
+        font-size: clamp(28px, 5vw, 40px);
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      .socialIcons {
+        justify-content: center;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      order: 0;
+    }
+  }
+}

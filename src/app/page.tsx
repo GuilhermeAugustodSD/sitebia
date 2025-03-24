@@ -8,10 +8,17 @@ import Contato from "@/components/Contato";
 import Sobre from "@/components/Sobre";
 import Equipe from "@/components/Equipe";
 import Depoimentos from "@/components/Depoimentos";
+import SEO from "@/components/SEO";
 
 export default function Home() {
   return (
     <div className="mainConteiner">
+      <SEO
+        title="Teste titulo"
+        description="TEste desc"
+        imageUrl="teste img"
+        url="teste url"
+      />
       <Header
         title={"siteTitle"}
         description={"Description"}
@@ -23,7 +30,7 @@ export default function Home() {
 
         <Visao />
 
-       <Areas />
+        <Areas />
 
         <Contato />
 
@@ -31,7 +38,7 @@ export default function Home() {
 
         <Equipe />
 
-         <Depoimentos />
+        <Depoimentos />
       </main>
     </div>
   );

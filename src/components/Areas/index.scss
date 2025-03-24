@@ -1,22 +1,106 @@
-.sectionAreas {
+// .sectionAreas {
 
-  // height: 93.9vh;
+//   // height: 93.9vh;
+//   width: 100%;
+//   height: 700px;
+//   padding: 40px var(--padding-x);
+//   background-color: var(--bg-preto);
+//   color: var(--bg-branco);
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+
+
+//   .words {
+//     max-width: 786px;
+//     height: fit-content;
+//     width: 100%;
+//     color: var(--bg-preto);
+//     display: flex;
+//     flex-direction: column;
+//     gap: 40px;
+
+//     h2 {
+//       color: var(--bg-branco);
+//       font-family: var(--font-playfar);
+//       font-weight: 700;
+//       font-size: 48px;
+//       margin-bottom: 20px;
+//     }
+
+//     ol {
+//       counter-reset: itemCounter;
+//       font-family: var(--font-playfar);
+//       font-weight: 700;
+
+//       display: grid;
+//       grid-template-columns: 1fr 1fr 1fr;
+//       gap: 40px;
+//       li {
+//         counter-increment: itemCounter;
+//         color: var(--bg-branco);
+//         font-size: 24px;
+//         display: flex;
+//         flex-direction: column;
+
+//         &::before {
+//           font-size: 36px;
+//           content: ".0" counter(itemCounter); /* Insere o contador antes do texto da li */
+//           margin-right: 5px; /* Espaço entre o número e o texto */
+//         }
+//       }
+//     }
+  
+//   }
+
+//   .blocoMaisAreas {
+//     background-color: var(--primary-color);
+//     padding: 24px 18px;
+//     min-height: 540px;
+
+//     h3 {
+//       color: var(--bg-branco);
+//       font-size: 32px;
+//       font-family: var(--font-playfar);
+//       margin-bottom: 40px;
+//     }
+
+//     ul {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 16px;
+//       padding: 0 10px 0 24px;
+
+//       li, li a {
+//         margin-left: 20px;
+//         list-style: square;
+//         font-family: var(--font-raleway);
+//         font-size: 20px;
+
+
+
+//       }
+//     }
+//   }
+
+// }
+
+.sectionAreas {
   width: 100%;
-  height: 700px;
   padding: 40px var(--padding-x);
   background-color: var(--bg-preto);
   color: var(--bg-branco);
 
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 
   .words {
     max-width: 786px;
-    height: fit-content;
     width: 100%;
-    color: var(--bg-preto);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -25,7 +109,7 @@
       color: var(--bg-branco);
       font-family: var(--font-playfar);
       font-weight: 700;
-      font-size: 48px;
+      font-size: clamp(28px, 5vw, 48px);
       margin-bottom: 20px;
     }
 
@@ -35,35 +119,38 @@
       font-weight: 700;
 
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // responsivo
+      gap: 30px;
+
       li {
         counter-increment: itemCounter;
         color: var(--bg-branco);
-        font-size: 24px;
+        font-size: 18px;
         display: flex;
         flex-direction: column;
 
         &::before {
-          font-size: 36px;
-          content: ".0" counter(itemCounter); /* Insere o contador antes do texto da li */
-          margin-right: 5px; /* Espaço entre o número e o texto */
+          font-size: 32px;
+          content: ".0" counter(itemCounter);
+          margin-right: 5px;
         }
       }
     }
-  
   }
 
   .blocoMaisAreas {
     background-color: var(--primary-color);
     padding: 24px 18px;
-    min-height: 540px;
+    min-height: 400px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 
     h3 {
       color: var(--bg-branco);
-      font-size: 32px;
+      font-size: clamp(20px, 4vw, 32px);
       font-family: var(--font-playfar);
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
 
     ul {
@@ -73,15 +160,20 @@
       padding: 0 10px 0 24px;
 
       li, li a {
-        margin-left: 20px;
         list-style: square;
         font-family: var(--font-raleway);
-        font-size: 20px;
-
-
-
+        font-size: 18px;
+        color: var(--bg-branco);
       }
     }
   }
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    .blocoMaisAreas {
+      max-width: 100%;
+    }
+  }
 }

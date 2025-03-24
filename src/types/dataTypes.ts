@@ -18,8 +18,14 @@ export type Depoimento = {
   description: string
 }
 
+export type Navegacao = {
+  label: string
+  link: string
+}
+
 export type LanguageContent = {
   header: Header
+  navegacao: Navegacao[]
   depoimentos: Depoimento[]
   equipe: Section
   missao: Section

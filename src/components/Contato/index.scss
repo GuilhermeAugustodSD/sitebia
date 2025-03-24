@@ -11,6 +11,11 @@
   align-items: center;
   // justify-content: space-around;
 
+  @media (max-width: 1600px) {
+    padding: 40px var(--padding-x);
+    height: max-content;
+  }
+
   h2 {
     color: var(--bg-preto);
     font-family: var(--font-playfar);
@@ -19,6 +24,11 @@
     margin-bottom: 20px;
     width: 100%;
 
+    @media (max-width: 1600px) {
+      max-width: 400px;
+      margin-right: auto;
+    }
+
   }
 
   .bgYellow {
@@ -26,6 +36,23 @@
     width: 100%;
     height: 500px;
     padding: 100px;
+    border-radius: 11px 0 0 11px;
+    
+    @media (max-width: 1600px) {
+      border-radius: 11px;
+    }
+
+    @media (max-width: 1300px) {
+      padding: 60px;
+    }
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      border-radius: 11px;
+    }
+  
 
     display: flex;
     justify-content: space-between;
@@ -88,6 +115,23 @@
     padding: 90px;
     border-radius: 11px;
 
+    @media (max-width: 1600px) {
+      padding: 40px;
+      height: auto;
+      max-width: 450px;
+      left: 60%;
+    }
+    @media (max-width: 1250px) {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      padding: 24px;
+      gap: 24px;
+      height: auto;
+      margin-top: -50px;
+    }
+
+
     h3 {
       font-size: 48px;
       color: var(--bg-branco);
@@ -100,7 +144,7 @@
     .containerNomeEmail {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 10px;
       width: 100%;
     }
 
@@ -146,6 +190,14 @@
         font-weight: 400;
         font-size: 20px;
 
+        @media (max-width: 1300px) {
+          height: 140px;
+        }
+
+        @media (max-width: 768px) {
+          height: auto;
+        }
+
         &::placeholder {
           color: var(--bg-preto);
           font-family: var(--font-raleway);
@@ -168,6 +220,97 @@
       border-radius: 11px;
       cursor: pointer;
       min-height: 50px;
+    }
+  }
+
+ 
+
+  
+  
+}
+
+@media (max-width: 768px) {
+  .sectionContato {
+    height: auto;
+    padding: 40px 20px;
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 24px;
+      max-width: 100%;
+    }
+
+    .bgYellow {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 40px 20px;
+      gap: 40px;
+      border-radius: 11px;
+
+      .words {
+        max-width: 100%;
+        gap: 24px;
+
+        .boxIcons {
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 20px;
+
+          .words {
+            gap: 6px;
+
+            strong,
+            span {
+              font-size: 16px;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+
+      .formRelation {
+        width: 100%;
+        position: static; // tira o absolute
+      }
+    }
+
+    form {
+      position: static;
+      width: 100%;
+      padding: 24px;
+      gap: 24px;
+      height: auto;
+      margin-top: -50px;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      .containerNomeEmail {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .inputContainer {
+        flex-direction: column;
+        gap: 16px;
+
+        input,
+        textarea {
+          font-size: 16px;
+        }
+
+        textarea {
+          height: 160px;
+        }
+      }
+
+      button {
+        font-size: 18px;
+        padding: 10px 24px;
+      }
     }
   }
 }

@@ -43,7 +43,7 @@ export default function Contato() {
   };
 
   return (
-    <section className='sectionContato' id='Contato'>
+    <section className='sectionContato' id='contato'>
       <h2>
         {
           language == "pt" ?

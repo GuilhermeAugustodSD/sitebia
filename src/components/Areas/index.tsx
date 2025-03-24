@@ -1,13 +1,16 @@
+'use client'
 import React from 'react';
 import './index.scss';
+import { useLanguage } from '../Context/Language';
 
 export default function Areas() {
+  const { language } = useLanguage()
 
   return (
     <section className='sectionAreas' id='areas-de-atuacao'>
 
       <div className='words'>
-        <h2>Áreas de Atuação</h2>
+        <h2>{language == 'pt' ? "Áreas de Atuação" : "Areas"}</h2>
         <ol>
           <li>Contratos Nacionais & Internacionais</li>
           <li>Planejamento e estruturação de novos negócios</li>
@@ -19,7 +22,7 @@ export default function Areas() {
       </div>
 
       <div className='blocoMaisAreas'>
-        <h3>Mais áreas de atuação</h3>
+        <h3>{language == 'pt' ? "Mais áreas de atuação" : "More Areas"}</h3>
 
         <ul>
           <li>Planejamento Patrimonial</li>

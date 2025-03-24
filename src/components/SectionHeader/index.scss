@@ -1,11 +1,9 @@
 .sectionHeader {
-  // background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8995973389355743) 27%, rgba(0,0,0,0) 100%);
-  // background-image: url('../../../public/image-1.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8995973389355743) 27%, rgba(0,0,0,0) 100%), url('../../../public/image-1.jpg');
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 27%, rgba(0, 0, 0, 0) 100%),
+              url('../../../public/image-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center right; // importante para manter o congresso visível
 
   height: 93.9vh;
   width: 100%;
@@ -14,7 +12,6 @@
   display: flex;
   align-items: center;
 
-
   .words {
     max-width: 740px;
     width: 100%;
@@ -22,11 +19,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     h1 {
       color: var(--bg-branco);
       font-family: var(--font-playfar);
       font-weight: 700;
-      font-size: 56px;
+      font-size: clamp(28px, 5vw, 56px); // responsivo
       margin-bottom: 20px;
     }
 
@@ -40,10 +38,38 @@
     p {
       font-family: var(--font-raleway);
       font-weight: 500;
-      font-size: 20px;
-      line-height: 1.3;
+      font-size: clamp(16px, 2.3vw, 20px); // responsivo
+      line-height: 1.5;
     }
-
   }
 
+  @media (max-width: 768px) {
+    justify-content: center;
+    text-align: center;
+    background-position: center; // ajuste para manter o congresso centralizado no mobile
+
+    .words {
+      align-items: center;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      hr {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 20px;
+
+    .words {
+      gap: 15px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 }

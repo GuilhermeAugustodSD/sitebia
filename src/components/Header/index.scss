@@ -4,7 +4,7 @@
 	background-color: var(--bg-preto);
 	color: var(--bg-branco);
 	padding: 8px var(--padding-x);
-	min-height: 56px;
+	// min-height: 56px;
 	position: sticky;
 	top: 0;
 	z-index: 99999;
@@ -17,20 +17,29 @@
 	justify-content: space-around;
 	width: 100%;
 
+	&.logoIcon {
+		// background-color: #1a1919c2;
+		max-height: 30px;
+		min-height: 60px;
+		height: max-content;
+	}
+
 
 	@media (max-width: 1420px) {
-		grid-template-columns: 400px 70px 50px;
+		grid-template-columns: 1fr 50px;
+		justify-self: space-between;
 		padding: 8px 16px;
 	}
 
 	.componentLogo {
 		width: 250px;
 		height: auto;
-		transition: .3s;
+		// transition: .3s;
 
 		&.logoIcon {
-			width: 50px !important;
-			transition: .8s;
+			width: 160px !important;
+			height: auto;
+			height: auto;
 
 			img {
 				object-fit: contain;
@@ -40,6 +49,7 @@
 		.logo {
 			width: inherit;
 			height: inherit;
+			transition: all 0.3s ease;
 
 			img {
 				width: inherit;
@@ -49,9 +59,10 @@
 	}
 
 	nav {
-
-		@media (max-width: 1420px) {
-			display: none;
+		&.header {
+			@media (max-width: 1420px) {
+				display: none;
+			}
 		}
 
 		ul {
@@ -84,17 +95,32 @@
 
 		span {
 			cursor: pointer;
-
 		}
 
+		&.header {
+			@media (max-width: 1420px) {
+				display: none;
+			}
+		}
 	}
+
+	// .menu {
+	// 	display: none;
+
+	// 	@media (max-width: 1420px) {
+	// 		display: block;
+	// 		cursor: pointer;
+	// 	}
+	// }
 
 	.menu {
 		display: none;
-
+	
 		@media (max-width: 1420px) {
 			display: block;
 			cursor: pointer;
+			transition: transform 0.3s ease;
+			color: var(--bg-branco);
 		}
 	}
 }
