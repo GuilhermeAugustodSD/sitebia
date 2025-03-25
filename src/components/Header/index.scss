@@ -36,6 +36,10 @@
 		height: auto;
 		// transition: .3s;
 
+		@media (max-width: 600px) {
+			width: 210px;
+		}
+
 		&.logoIcon {
 			width: 160px !important;
 			height: auto;
@@ -71,9 +75,9 @@
 
 			li {
 				a {
-					font-family: var(--font-playfar);
+					font-family: var(--font-inter);
 					font-weight: 700;
-					font-size: 20px;
+					font-size: 16px;
 					color: var(--bg-branco);
 					transition: .8s;
 
@@ -87,15 +91,33 @@
 
 	.containerLinguagem {
 		width: max-content;
-		font-family: var(--font-playfar);
-		font-weight: 700;
 		font-size: 20px;
 		display: flex;
-		gap: 10px;
+		gap: 20px;
 
-		span {
+		.containerFlag {
+			width: 30px;
+			height: 30px;
 			cursor: pointer;
+			border-radius: 50%;
+			border: 2px solid transparent;
+
+			&.active {
+				img {
+					border: 2px solid #ffee00;
+				}
+			}
+
+			
+			img {
+				width: inherit;
+				height: inherit;
+				border-radius: 50%;
+				object-fit: cover;
+				transition: border 0.3s linear;
+			}
 		}
+
 
 		&.header {
 			@media (max-width: 1420px) {

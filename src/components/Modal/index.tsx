@@ -4,6 +4,7 @@ import './index.scss';
 import { FaX } from "react-icons/fa6";
 import { useLanguage } from '../Context/Language';
 import { dataConst } from '@/constants/data';
+import Flag from 'react-flagkit';
 
 interface ModalProps {
   isActive: boolean
@@ -43,7 +44,7 @@ export default function Modal({ isActive }: ModalProps) {
     <div className={`offcanvas ${isModalShown ? "active" : ""}`}>
       <div className="modal-content" ref={modalRef}>
         <FaX size={12} onClick={closeModal} />
-        
+
         <nav className='navMenu'>
           <ul>
             {dataConst[language].navegacao.map((link, index) => (
@@ -54,10 +55,13 @@ export default function Modal({ isActive }: ModalProps) {
           </ul>
         </nav>
 
-        <div className='containerLinguagem'>
-          <span onClick={() => setLanguage('pt')}>PT</span>
-          <span>|</span>
-          <span onClick={() => setLanguage('en')}>EN</span>
+        <div className="containerLinguagem">
+          <div className={`containerFlag ${language == 'pt' ? "active" : ""}`}>
+            <Flag country="BR" onClick={() => setLanguage("pt")} />
+          </div>
+          <div className={`containerFlag ${language == 'en' ? "active" : ""}`}>
+            <Flag country="GB" onClick={() => setLanguage("en")} />
+          </div>
         </div>
 
       </div>

@@ -12,6 +12,7 @@ import { useLanguage } from "../Context/Language";
 import Modal from "../Modal";
 import { HeaderTypes2 } from "@/types/general";
 import { dataConst } from "@/constants/data";
+import Flag from 'react-flagkit'
 
 export default function Header({
   title = "Headless by WP Engine",
@@ -28,7 +29,7 @@ export default function Header({
       const handleScroll = () => {
         setScrolledPastHero(window.scrollY > window.innerHeight);
       };
-  
+
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     }, 1000)
@@ -59,9 +60,12 @@ export default function Header({
       </nav>
 
       <div className="containerLinguagem header">
-        <span onClick={() => setLanguage("pt")}>PT</span>
-        <span>|</span>
-        <span onClick={() => setLanguage("en")}>EN</span>
+        <div className={`containerFlag ${language == 'pt' ? "active": ""}`}>
+          <Flag country="BR" onClick={() => setLanguage("pt")} />
+        </div>
+        <div className={`containerFlag ${language == 'en' ? "active": ""}`}>
+          <Flag country="GB" onClick={() => setLanguage("en")} />
+        </div>
       </div>
 
       <MdOutlineMenu size={40} className="menu" onClick={() => setShowModal(!showModal)} />
