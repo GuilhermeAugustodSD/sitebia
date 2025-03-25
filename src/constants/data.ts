@@ -115,7 +115,7 @@ const dataConst: dataConstTypes = {
     ],
     "equipe": {
       "title": "Conheça a equipe Napoleão&Tajra",
-      "description": "Constituído em 2003, em Brasília, o Napoleão e Tajra Advogados é um escritório que presta serviços de advocacia e consultoria jurídica com atuação dedicada principalmente à área cível e  empresarial, baseada no atendimento a empresas de diversos seguimentos como universidades, redes de postos de gasolina, franqueadoras, empreiteiras, locadoras de veículos, instituições financeiras, planos de saúde, dentre outros. O escritório possui sede própria em Brasília, com estrutura física de 550 m²."
+      "description": "Constituído em 2003, em Brasília, o Napoleão e Tajra Advogados é um escritório que presta serviços de advocacia e consultoria jurídica com atuação dedicada principalmente à área cível e  empresarial, baseada no atendimento a empresas de diversos seguimentos como universidades, redes de postos de gasolina, franqueadoras, empreiteiras, locadoras de veículos, instituições financeiras, planos de saúde, dentre outros. \nO escritório possui sede própria em Brasília, com estrutura física de 550 m²."
     },
     "missao": {
       "title": "Missão",
