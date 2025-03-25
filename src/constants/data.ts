@@ -57,7 +57,7 @@ const dataConst: dataConstTypes = {
     ],
     "equipe": {
       "title": "Meet the Napoleon&Tajra team",
-      "description": "EN ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "description": "Founded in 2003 in Brasília, Napoleão e Tajra Advogados is a law firm that provides legal services and consultancy, primarily focused on civil and business law. The firm serves a wide range of companies, including universities, gas station chains, franchisors, construction companies, car rental agencies, financial institutions, health insurance providers, among others. The firm has its own headquarters in Brasília, with a physical structure of 550 square meters."
     },
     "missao": {
       "title": "Legacy",
@@ -115,7 +115,7 @@ const dataConst: dataConstTypes = {
     ],
     "equipe": {
       "title": "Conheça a equipe Napoleão&Tajra",
-      "description": "PT ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "description": "Constituído em 2003, em Brasília, o Napoleão e Tajra Advogados é um escritório que presta serviços de advocacia e consultoria jurídica com atuação dedicada principalmente à área cível e  empresarial, baseada no atendimento a empresas de diversos seguimentos como universidades, redes de postos de gasolina, franqueadoras, empreiteiras, locadoras de veículos, instituições financeiras, planos de saúde, dentre outros. O escritório possui sede própria em Brasília, com estrutura física de 550 m²."
     },
     "missao": {
       "title": "Missão",
