@@ -57,7 +57,7 @@ const dataConst: dataConstTypes = {
     ],
     "equipe": {
       "title": "Meet the Napoleon&Tajra team",
-      "description": "Founded in 2003 in Brasília, Napoleão e Tajra Advogados is a law firm that provides legal services and consultancy, primarily focused on civil and business law. The firm serves a wide range of companies, including universities, gas station chains, franchisors, construction companies, car rental agencies, financial institutions, health insurance providers, among others. The firm has its own headquarters in Brasília, with a physical structure of 550 square meters."
+      "description": "Founded in 2003, in Brasília, Napoleão e Tajra Advogados is a law firm that provides legal advice and consultancy services, mainly in the civil and business areas, based on assisting companies from various sectors such as universities, gas station chains, franchisors, contractors, car rental companies, financial institutions, insurance companies, and others."
     },
     "missao": {
       "title": "Legacy",
