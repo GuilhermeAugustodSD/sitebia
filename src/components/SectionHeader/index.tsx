@@ -13,7 +13,7 @@ export default function SectionHeader() {
         <h1>{dataConst[language].header.title}</h1>
         <hr />
         <p>{dataConst[language].header?.firstDescription}</p>
-        <p>{dataConst[language].header?.secondDescription}</p>
+        <p className='second'>{dataConst[language].header?.secondDescription}</p>
       </div>
     </section>
   );
