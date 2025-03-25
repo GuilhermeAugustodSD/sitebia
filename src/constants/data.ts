@@ -1,4 +1,16 @@
 import { dataConstTypes } from "@/types/dataTypes"
+import { TbContract } from "react-icons/tb";
+import { MdOutlineBusiness } from "react-icons/md";
+import { HiOutlineLightBulb } from "react-icons/hi2";
+import { GoLaw } from "react-icons/go";
+const iconMap = {
+  TbContract: TbContract,
+  MdOutlineBusiness: MdOutlineBusiness,
+  HiOutlineLightBulb: HiOutlineLightBulb,
+  GoLaw: GoLaw
+  // adicione outros ícones aqui conforme for usando
+};
+
 
 const dataConst: dataConstTypes = {
   "en": {
@@ -13,6 +25,15 @@ const dataConst: dataConstTypes = {
       {"label": "Areas", "link": "areas-de-atuacao"},
       {"label": "About", "link": "sobre"},
       {"label": "Contact Us", "link": "contato"}
+    ],
+    "areas": [
+      {title: "National and International Contracts", hat: "Business", icon: "TbContract"},
+      {title: "New Business Structuring", hat: "Planning", icon: "MdOutlineBusiness"},
+      {title: "Business Partnership", hat: "Business", icon: "MdOutlineBusiness"},
+      {title: "Startup Advisory", hat: "Consulting", icon: "HiOutlineLightBulb"},
+      {title: "Holdings", hat: "Organization", icon: "GoLaw"},
+      {title: "Sue Others", hat: "Money", icon: "GoLaw"}
+
     ],
     "depoimentos": [
       {
@@ -64,6 +85,14 @@ const dataConst: dataConstTypes = {
       {"label": "Sobre", "link": "sobre"},
       {"label": "Entre em Contato", "link": "contato"}
     ],
+    "areas": [
+      {title: "Contratos Nacionais e Internacionais", hat: "Empresarial", icon: "TbContract"},
+      {title: "Estruturação de Novos Negócios", hat: "Planejamento", icon: "MdOutlineBusiness"},
+      {title: "Sociedade Empresarial", hat: "Empresarial", icon: "MdOutlineBusiness"},
+      {title: "Acessoria para StartUps", hat: "Consultoria", icon: "HiOutlineLightBulb"},
+      {title: "Holdings", hat: "Organização", icon: "GoLaw"},
+      {title: "Processar os Outros", hat: "Dinheiro", icon: "GoLaw"}
+    ],
     "depoimentos": [
       {
         "empresa": "Eletrobrás",
@@ -102,4 +131,4 @@ const dataConst: dataConstTypes = {
     }
   }
 }
-export {dataConst}
+export {dataConst, iconMap}

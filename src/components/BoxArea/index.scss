@@ -1,0 +1,41 @@
+.boxArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 20px;
+  background-color: #222121;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 3px solid transparent;
+
+  max-width: 300px;
+  min-height: 250px;
+
+  @media (max-width: 768px) {
+    max-width: 300px;
+    min-height: max-content;
+  }
+  
+  &:hover {
+    border: 3px solid var(--primary-color);
+  }
+
+  .words {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    small {
+      font-size: 14px;
+      font-family: var(--font-inter);
+      font-weight: 400;
+    }
+
+    span {
+      font-size: 20px;
+      font-family: var(--font-inter);
+      font-weight: 700;
+    }
+  }
+}

@@ -23,9 +23,16 @@ export type Navegacao = {
   link: string
 }
 
+export type Areas = {
+  title: string
+  hat: string
+  icon: any
+}
+
 export type LanguageContent = {
   header: Header
   navegacao: Navegacao[]
+  areas: Areas[]
   depoimentos: Depoimento[]
   equipe: Section
   missao: Section

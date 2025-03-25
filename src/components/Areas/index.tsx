@@ -2,6 +2,8 @@
 import React from 'react';
 import './index.scss';
 import { useLanguage } from '../Context/Language';
+import { dataConst, iconMap } from '@/constants/data';
+import BoxArea from '../BoxArea';
 
 export default function Areas() {
   const { language } = useLanguage()
@@ -9,8 +11,8 @@ export default function Areas() {
   return (
     <section className='sectionAreas' id='areas-de-atuacao'>
 
-      <div className='words'>
-        <h2>{language == 'pt' ? "Áreas de Atuação" : "Areas of Practice"}</h2>
+      {/* <div className='words'>
+        
         <ol>
           <li>Contratos Nacionais & Internacionais</li>
           <li>Planejamento e estruturação de novos negócios</li>
@@ -19,9 +21,9 @@ export default function Areas() {
           <li>Holdings</li>
         </ol>
 
-      </div>
+      </div> */}
 
-      <div className='blocoMaisAreas'>
+     {/*  <div className='blocoMaisAreas'>
         <h3>{language == 'pt' ? "Mais áreas de atuação" : "More Areas"}</h3>
 
         <ul>
@@ -32,7 +34,27 @@ export default function Areas() {
           <li>Fusões e num sei o que</li>
           <li>Fusões Internacionais de capitais e bla</li>
         </ul>
+      </div> */}
+      <div className="container">
+        <h2>{language == 'pt' ? "Áreas de Atuação" : "Areas of Practice"}</h2>
+        <div className="boxAreas">
+          {
+            dataConst[language].areas.map((area, index) => {
+              const IconComponent = iconMap[area.icon as keyof typeof iconMap];
+              
+              return (
+              <BoxArea
+                key={`${index}-${area.hat}`}
+                title={area.title}
+                hat={area.hat}
+                icon={<IconComponent size={40} color='var(--primary-color)'/>}
+              />
+            );})
+          }
+        </div>
       </div>
+
+
     </section>
   );
 }
