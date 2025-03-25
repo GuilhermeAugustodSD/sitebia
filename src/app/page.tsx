@@ -9,6 +9,7 @@ import Sobre from "@/components/Sobre";
 import Equipe from "@/components/Equipe";
 import Depoimentos from "@/components/Depoimentos";
 import SEO from "@/components/SEO";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -40,6 +41,8 @@ export default function Home() {
 
         <Depoimentos />
       </main>
+
+      <Footer />
     </div>
   );
 }

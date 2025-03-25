@@ -1,0 +1,29 @@
+.component {
+	color: var(--bg-branco);
+	background: var(--bg-preto);
+	padding: 20px;
+
+
+	.copyright {
+		border-top: 1px solid #F5F5F5;
+		padding-top: 10px;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		p {
+			font-size: 12px;
+			font-family: var(--font-inter);
+			font-weight: 300;
+		}
+
+		.social {
+			display: flex;
+			gap: 10px;
+		}
+	}
+}
+
