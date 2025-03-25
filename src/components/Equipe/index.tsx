@@ -15,7 +15,8 @@ export default function Equipe() {
 
       <div className='words'>
         <h2>{content && content.equipe?.title}</h2>
-        <p>{content && content.equipe?.description}</p>
+        <p>{content && content.equipe?.description1}</p>
+        <p>{content.equipe?.description2 && content.equipe?.description2}</p>
 
         <div className='socialIcons'>
           <IconIntagram url="https://www.instagram.com/bdantas_adv/" color="#191919"/>

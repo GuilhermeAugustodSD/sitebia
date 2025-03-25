@@ -24,6 +24,10 @@
   flex-wrap: wrap;
   height: max-content;
 
+  @media (max-width: 1300px) {
+    padding: 40px 20px;
+  }
+
   @media (max-width: 1200px) {
     padding: 20px;
   }
@@ -45,12 +49,16 @@
 
     .boxAreas {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 20px;
       width: 100%;
 
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
       @media (max-width: 950px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
       @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);

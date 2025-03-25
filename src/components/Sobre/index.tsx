@@ -21,7 +21,9 @@ export default function Sobre() {
       <div className='words'>
         <h2>{content && content.sobre?.title}</h2>
         
-        <p>{content && content.sobre?.description}</p>
+        <p>{content && content.sobre?.description1}</p>
+        <p>{content && content.sobre?.description2}</p>
+        <p>{content && content.sobre?.description3}</p>
 
         <div className='socialIcons'>
           <IconIntagram url="https://www.instagram.com/bdantas_adv/" color="#F5F5F5"/>

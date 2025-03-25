@@ -43,12 +43,12 @@ export default function Visao() {
 
         <div className='bloco'>
           <h2>{content?.missao?.title}</h2>
-          <p>{content?.missao?.description}</p>
+          <p>{content?.missao?.description1}</p>
         </div>
 
         <div className='bloco'>
           <h2>{content?.valores?.title}</h2>
-          <p>{content?.valores?.description}</p>
+          <p>{content?.valores?.description1}</p>
         </div>
 
       </div>

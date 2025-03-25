@@ -1,7 +1,7 @@
 .sectionSobre {
 
   width: 100%;
-  height: 500px;
+  height: 560px;
   // padding: 40px 0; 
   background-color: var(--bg-preto);
   color: var(--bg-branco);
@@ -13,7 +13,7 @@
 
 
   .containerImage {
-    height: 500px;
+    height: 560px;
     
     &::before {
       content: '';
@@ -32,7 +32,7 @@
   }
 
   .words {
-    max-width: 800px;
+    max-width: 900px;
     padding-right: 100px;
     height: fit-content;
     width: 100%;

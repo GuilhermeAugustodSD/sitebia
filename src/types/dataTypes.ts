@@ -2,7 +2,9 @@ export type Language = 'en' | 'pt'
 
 export type Section = {
   title: string
-  description: string
+  description1: string
+  description2?: string
+  description3?: string
 }
 
 export type Header = {
