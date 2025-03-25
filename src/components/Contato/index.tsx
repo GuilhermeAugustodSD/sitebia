@@ -82,7 +82,7 @@ export default function Contato() {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <h3>{ language == "pt" ? "Contato" : "Contact"}</h3>
+        <h3>{ language == "pt" ? "Contato" : "Contact Us"}</h3>
         <div className='containerNomeEmail'>
           <div className='inputContainer'>
             <input placeholder={language == "pt" ? 'Nome' : 'Name'} type='text' value={nome} onChange={(e) => setNome(e.target.value)} required/>

@@ -22,10 +22,8 @@
 
     h1 {
       color: var(--bg-branco);
-      font-family: var(--font-playfar);
       font-weight: 700;
-      font-size: clamp(28px, 5vw, 56px); // responsivo
-      margin-bottom: 20px;
+      font-size: clamp(28px, 5vw, 56px);
     }
 
     hr {
@@ -38,7 +36,7 @@
     p {
       font-family: var(--font-raleway);
       font-weight: 500;
-      font-size: clamp(16px, 2.3vw, 20px); // responsivo
+      font-size: clamp(16px, 2.3vw, 18px);
       line-height: 1.5;
     }
   }

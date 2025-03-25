@@ -79,7 +79,7 @@
     .bloco {
       h2 {
         color: var(--bg-preto);
-        font-family: var(--font-playfar);
+        font-family: var(--font-inter);
         font-weight: 700;
         font-size: clamp(24px, 4vw, 40px);
         margin-bottom: 20px;
@@ -89,7 +89,7 @@
       ul li {
         font-family: var(--font-raleway);
         font-weight: 500;
-        font-size: clamp(16px, 2.3vw, 20px);
+        font-size: clamp(16px, 2.3vw, 18px);
         line-height: 1.5;
       }
 

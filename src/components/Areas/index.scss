@@ -109,7 +109,7 @@
       color: var(--bg-branco);
       font-family: var(--font-playfar);
       font-weight: 700;
-      font-size: clamp(28px, 5vw, 48px);
+      font-size: clamp(28px, 5vw, 40px);
       margin-bottom: 20px;
     }
 
@@ -145,6 +145,7 @@
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
+    border-radius: 7px;
 
     h3 {
       color: var(--bg-branco);

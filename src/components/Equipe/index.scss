@@ -12,12 +12,11 @@
   gap: 40px;
 
 
-  // .containerImage {
-  //   height: 100%;
-  //   img {
-  //     object-fit: cover;
-  //   }
-  // }
+  .containerImage {
+    img {
+      border-radius: 7px;
+    }
+  }
 
   .words {
     max-width: 700px;
@@ -26,18 +25,17 @@
     color: var(--bg-preto);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 
     h2 {
       font-family: var(--font-playfar);
       font-weight: 700;
       font-size: 40px;
-      margin-bottom: 20px;
     }
 
     p {
       font-family: var(--font-raleway);
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 500;
     }
 

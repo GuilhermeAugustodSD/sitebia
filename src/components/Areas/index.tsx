@@ -10,7 +10,7 @@ export default function Areas() {
     <section className='sectionAreas' id='areas-de-atuacao'>
 
       <div className='words'>
-        <h2>{language == 'pt' ? "Áreas de Atuação" : "Areas"}</h2>
+        <h2>{language == 'pt' ? "Áreas de Atuação" : "Areas of Practice"}</h2>
         <ol>
           <li>Contratos Nacionais & Internacionais</li>
           <li>Planejamento e estruturação de novos negócios</li>
