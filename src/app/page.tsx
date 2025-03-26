@@ -6,7 +6,7 @@ import Visao from "@/components/Visao";
 import Areas from "@/components/Areas";
 import Contato from "@/components/Contato";
 import Sobre from "@/components/Sobre";
-import Equipe from "@/components/Equipe";
+// import Equipe from "@/components/Equipe";
 import Depoimentos from "@/components/Depoimentos";
 import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
@@ -37,7 +37,7 @@ export default function Home() {
 
         <Sobre />
 
-        <Equipe />
+        {/* <Equipe /> */}
 
         <Depoimentos />
       </main>
