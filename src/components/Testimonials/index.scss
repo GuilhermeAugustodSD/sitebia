@@ -1,6 +1,19 @@
 .sectionTestimonials {
   // background-color: #D9A443;
   background-color: var(--bg-preto);
+  // background-image: 
+
+  //Listras diagonais
+  //   url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20L20 0H19L0 19V20Z' fill='%23191919'/%3E%3C/svg%3E");
+  // background-repeat: repeat;
+  // background-size: 20px 20px;
+  //Bolinhas
+  // background-image: radial-gradient(#1b1b1b 1px, transparent 1px);
+  // background-size: 18px 18px;
+  //melhor
+  background-image: 
+  url("data:image/svg+xml,%3Csvg width='100' height='86.6' viewBox='0 0 100 86.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L100 25 V61.6 L50 86.6 L0 61.6 V25 Z' fill='none' stroke='%23191919' stroke-width='2'/%3E%3C/svg%3E");
+  background-size: 40px 35px;
 
   display: flex;
   max-width: 100%;

@@ -37,7 +37,12 @@ export default function Testimonials() {
 
           <Swiper
             modules={[Navigation, Autoplay]}
+            spaceBetween={20}
             slidesPerView={1}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
             loop={true}
             onBeforeInit={(swiper) => {
               setTimeout(() => {
