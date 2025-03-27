@@ -22,8 +22,6 @@ export default function Testimonials() {
   return (
     <section className='sectionTestimonials' id='depoimentos'>
       <div className="rightBack">
-
-
         <div className="boxTestimunials">
 
           <div className="words">
