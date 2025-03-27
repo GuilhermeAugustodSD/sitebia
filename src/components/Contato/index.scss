@@ -4,7 +4,7 @@
   height: max-content;
   padding: 40px 0 40px var(--padding-x);
   // background-color: var(--bg-preto);
-  color: var(--bg-branco);
+  color: var(--font-color-white);
 
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
     height: max-content;
     max-width: 600px;
     // min-height: 662px;
-    background-color: #1a1919d8;
+    background-color: #111111d2;
     padding: 40px;
     border-radius: 7px;
 
@@ -144,7 +144,7 @@
 
     h3 {
       font-size: 32px;
-      color: var(--bg-branco);
+      color: var(--font-color-white);
       font-family: var(--font-raleway);
       font-weight: 700;
       margin: 0;
@@ -221,7 +221,7 @@
     button {
       margin: 0 auto;
       background-color: var(--primary-color);
-      color: var(--bg-branco);
+      color: var(--font-color-white);
       font-size: 20px;
       font-weight: 700;
       font-family: var(--font-raleway);

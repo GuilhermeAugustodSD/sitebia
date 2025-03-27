@@ -5,7 +5,7 @@
   height: max-content;
   padding: 40px var(--padding-x);
   background-color: var(--bg-preto);
-  color: var(--bg-branco);
+  color: var(--font-color-white);
 
   display: flex;
   align-items: flex-start;
@@ -24,7 +24,7 @@
     gap: 40px;
 
     h2 {
-      color: var(--bg-branco);
+      color: var(--font-color-white);
       font-family: var(--font-playfar);
       font-weight: 700;
       font-size: 40px;
@@ -34,7 +34,7 @@
 
     .slider {
       width: 100%;
-      color: var(--bg-branco);
+      color: var(--font-color-white);
       &> div {
         &> div {
           .clientes {
@@ -60,14 +60,14 @@
                 font-family: var(--font-raleway);
                 font-weight: 500;
                 font-size: 18px;
-                color: var(--bg-branco);
+                color: var(--font-color-white);
               }
       
               p {
                 font-family: var(--font-raleway);
                 font-weight: 400;
                 font-size: 20px;
-                color: var(--bg-branco);
+                color: var(--font-color-white);
               }
             }
           }

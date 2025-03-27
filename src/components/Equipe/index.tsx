@@ -19,8 +19,8 @@ export default function Equipe() {
         <p>{content.equipe?.description2 && content.equipe?.description2}</p>
 
         <div className='socialIcons'>
-          <IconIntagram url="https://www.instagram.com/bdantas_adv/" color="#191919"/>
-          <IconLinkedin url="https://www.linkedin.com/in/beatriz-helena-dantas/" color="#191919"/>
+          <IconIntagram url="https://www.instagram.com/bdantas_adv/" color="var(--bg-preto)"/>
+          <IconLinkedin url="https://www.linkedin.com/in/beatriz-helena-dantas/" color="var(--bg-preto)"/>
         </div>
       </div>
 

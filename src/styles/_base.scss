@@ -15,7 +15,7 @@ body {
 	font-family: Inter;
 	font-weight: var(--wpe--font-weight--medium);
 	font-size: 1rem;
-	background-color: var(--bg-branco);
+	background-color: var(--font-color-white);
 	color: var(--bg-preto);
 
 	&::-webkit-scrollbar {
@@ -66,6 +66,6 @@ a {
 }
 
 ::selection {
-	color: var(--bg-branco);
+	color: var(--font-color-white);
 	background-color: var(--primary-color);
 }

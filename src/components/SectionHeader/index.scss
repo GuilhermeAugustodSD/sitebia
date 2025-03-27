@@ -15,13 +15,13 @@
   .words {
     max-width: 740px;
     width: 100%;
-    color: var(--bg-branco);
+    color: var(--font-color-white);
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     h1 {
-      color: var(--bg-branco);
+      color: var(--font-color-white);
       font-weight: 700;
       font-size: clamp(28px, 5vw, 56px);
     }

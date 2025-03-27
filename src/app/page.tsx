@@ -7,9 +7,10 @@ import Areas from "@/components/Areas";
 import Contato from "@/components/Contato";
 import Sobre from "@/components/Sobre";
 // import Equipe from "@/components/Equipe";
-import Depoimentos from "@/components/Depoimentos";
+// import Depoimentos from "@/components/Depoimentos";
 import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -39,7 +40,8 @@ export default function Home() {
 
         {/* <Equipe /> */}
 
-        <Depoimentos />
+        {/* <Depoimentos /> */}
+        <Testimonials />
       </main>
 
       <Footer />

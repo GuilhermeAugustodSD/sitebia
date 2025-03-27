@@ -25,15 +25,17 @@ export default function Header({
   const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
-    setInterval(() => {
-      const handleScroll = () => {
-        setScrolledPastHero(window.scrollY > window.innerHeight);
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, 1000)
+    const handleScroll = () => {
+      setScrolledPastHero(window.scrollY > window.innerHeight);
+    };
+  
+    // Executa logo no início para ver se já passou do hero
+    handleScroll();
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   // const imageSrc = scrolledPastHero ? LogoIcon : Logo;
   const imageClass = scrolledPastHero ? "logoIcon" : "";

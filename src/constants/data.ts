@@ -2,12 +2,24 @@ import { dataConstTypes } from "@/types/dataTypes"
 import { TbContract } from "react-icons/tb";
 import { MdOutlineBusiness } from "react-icons/md";
 import { HiOutlineLightBulb } from "react-icons/hi2";
-import { GoLaw } from "react-icons/go";
+import { PiFileMagnifyingGlassDuotone } from "react-icons/pi";
+import { FaHandshakeSimple } from "react-icons/fa6";
+import { GiWorld } from "react-icons/gi";
+import { VscLaw } from "react-icons/vsc";
+import { AiOutlineStock } from "react-icons/ai";
+import { MdModeOfTravel } from "react-icons/md";
+import { IoIosPeople } from "react-icons/io";
 const iconMap = {
   TbContract: TbContract,
   MdOutlineBusiness: MdOutlineBusiness,
   HiOutlineLightBulb: HiOutlineLightBulb,
-  GoLaw: GoLaw
+  PiFileMagnifyingGlassDuotone: PiFileMagnifyingGlassDuotone,
+  FaHandshakeSimple: FaHandshakeSimple,
+  GiWorld: GiWorld,
+  VscLaw: VscLaw,
+  AiOutlineStock: AiOutlineStock,
+  MdModeOfTravel: MdModeOfTravel,
+  IoIosPeople: IoIosPeople
   // adicione outros ícones aqui conforme for usando
 };
 
@@ -28,34 +40,60 @@ const dataConst: dataConstTypes = {
     ],
     "areas": [
       {title: "National and International Contracts", hat: "Corporate and Business", icon: "TbContract"},
-      {title: "Corporate agreements", hat: "Corporate and Business", icon: "TbContract"},
-      {title: "Due Diligence for Investment", hat: "Corporate and Business", icon: "TbContract"},
+      {title: "Corporate agreements", hat: "Corporate and Business", icon: "IoIosPeople"},
+      {title: "Due Diligence for Investment", hat: "Corporate and Business", icon: "PiFileMagnifyingGlassDuotone"},
       {title: "Advisory and Consultancy Services for Start-ups ", hat: "Corporate and Business", icon: "HiOutlineLightBulb"},
-      {title: "Partnership and Investment Contracts", hat: "Corporate, Business & Private Individuals", icon: "TbContract"},
-      {title: "National and international compliance", hat: "Corporate and Business", icon: "TbContract"},
-      {title: "Business Litigation", hat: "Corporate, Business & Private Individuals", icon: "MdOutlineBusiness"},
-      {title: "Capital Market Advisory Services and Representation", hat: "Corporate and Private Individuals", icon: "MdOutlineBusiness"},
+      {title: "Partnership and Investment Contracts", hat: "Corporate, Business & Private Individuals", icon: "FaHandshakeSimple"},
+      {title: "National and international compliance", hat: "Corporate and Business", icon: "GiWorld"},
+      {title: "Business Litigation", hat: "Corporate, Business & Private Individuals", icon: "VscLaw"},
+      {title: "Capital Market Advisory Services and Representation", hat: "Corporate and Private Individuals", icon: "AiOutlineStock"},
       {title: "Bankruptcy Protection", hat: "Corporate and Business", icon: "MdOutlineBusiness"},
-      {title: "Immigration and Naturalisation", hat: "Private individuals", icon: "MdOutlineBusiness"}
+      {title: "Immigration and Naturalisation", hat: "Private individuals", icon: "MdModeOfTravel"}
     ],
     "depoimentos": [
       {
         "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Name Eletrobrás",
+        "cargo": "Presidente",
         "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
+        "link": "https://escolhaaescola.correiobraziliense.com.br",
+        "description": "Participar desse projeto foi transformador. Aprendi muito, cresci pessoal e profissionalmente, e sou grato pela oportunidade de fazer parte de algo tão significativo e inspirador.",
+      },
+      {
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "Presidente",
+        "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
+        "link": "https://escolhaaescola.correiobraziliense.com.br",
+        "description": "Participar desse projeto foi transformador. Aprendi muito, cresci pessoal e profissionalmente, e sou grato pela oportunidade de fazer parte de algo tão significativo e inspirador.",
+      },
+      {
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "cargo",
+        "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
         "link": "https://escolhaaescola.correiobraziliense.com.br",
         "description": "Lorem Lorem Lorem Lorem bla bla bla json PT",
       },
       {
-        "empresa": "Teste",
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "cargo",
         "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
         "link": "https://escolhaaescola.correiobraziliense.com.br",
-        "description": "Ótima advogada 2!",
-      },
-      {
-        "empresa": "Ipiranga",
-        "avatar": "/avatar.png",
-        "link": "https://escolhaaescola.correiobraziliense.com.br",
-        "description": "Ótima advogada!",
+        "description": "Lorem Lorem Lorem Lorem bla bla bla json PT",
       }
     ],
     "equipe": {
@@ -92,34 +130,60 @@ const dataConst: dataConstTypes = {
     ],
     "areas": [
       {title: "Contratos Nacionais e Internacionais", hat: "Empresarial", icon: "TbContract"},
-      {title: "Contratos Societários", hat: "Empresarial", icon: "TbContract"},
-      {title: "Due Diligence para Investimentos", hat: "Empresarial", icon: "TbContract"},
+      {title: "Contratos Societários", hat: "Empresarial", icon: "IoIosPeople"},
+      {title: "Due Diligence para Investimentos", hat: "Empresarial", icon: "PiFileMagnifyingGlassDuotone"},
       {title: "Acessoria para StartUps", hat: "Consultoria", icon: "HiOutlineLightBulb"},
-      {title: "Contratos de Parcerias e Investimentos", hat: "Empresarial", icon: "TbContract"},
-      {title: "Compliance Nacional e Internacional", hat: "Empresarial", icon: "TbContract"},
-      {title: "Ações de Cobranças e outros Litígios Empresariais", hat: "Empresarial e PF", icon: "MdOutlineBusiness"},
-      {title: "Assesoria e representação no Mercado de Capitais", hat: "Empresarial e PF", icon: "MdOutlineBusiness"},
+      {title: "Contratos de Parcerias e Investimentos", hat: "Empresarial", icon: "FaHandshakeSimple"},
+      {title: "Compliance Nacional e Internacional", hat: "Empresarial", icon: "GiWorld"},
+      {title: "Ações de Cobranças e outros Litígios Empresariais", hat: "Empresarial e PF", icon: "VscLaw"},
+      {title: "Assesoria e representação no Mercado de Capitais", hat: "Empresarial e PF", icon: "AiOutlineStock"},
       {title: "Recuperação Judicial e Extrajudicial", hat: "Empresarial", icon: "MdOutlineBusiness"},
-      {title: "Processos de Imigração e Naturalização", hat: "Pessoa Física", icon: "MdOutlineBusiness"}
+      {title: "Processos de Imigração e Naturalização", hat: "Pessoa Física", icon: "MdModeOfTravel"}
     ],
     "depoimentos": [
       {
         "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Name Eletrobrás",
+        "cargo": "Presidente",
         "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
+        "link": "https://escolhaaescola.correiobraziliense.com.br",
+        "description": "Participar desse projeto foi transformador. Aprendi muito, cresci pessoal e profissionalmente, e sou grato pela oportunidade de fazer parte de algo tão significativo e inspirador.",
+      },
+      {
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "Presidente",
+        "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
+        "link": "https://escolhaaescola.correiobraziliense.com.br",
+        "description": "Participar desse projeto foi transformador. Aprendi muito, cresci pessoal e profissionalmente, e sou grato pela oportunidade de fazer parte de algo tão significativo e inspirador.",
+      },
+      {
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "cargo",
+        "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
         "link": "https://escolhaaescola.correiobraziliense.com.br",
         "description": "Lorem Lorem Lorem Lorem bla bla bla json PT",
       },
       {
-        "empresa": "Teste",
+        "empresa": "Eletrobrás",
+        "company": "Eletrobrás",
+        "name": "Eletrobrás",
+        "cargo": "cargo",
         "avatar": "/avatar.png",
+        "picture": "/avatar.png",
+        "grade": 4,
         "link": "https://escolhaaescola.correiobraziliense.com.br",
-        "description": "Ótima advogada 2!",
-      },
-      {
-        "empresa": "Ipiranga",
-        "avatar": "/avatar.png",
-        "link": "https://escolhaaescola.correiobraziliense.com.br",
-        "description": "Ótima advogada!",
+        "description": "Lorem Lorem Lorem Lorem bla bla bla json PT",
       }
     ],
     "equipe": {

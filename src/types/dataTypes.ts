@@ -17,7 +17,13 @@ export type Depoimento = {
   empresa: string
   avatar: string
   link: string
+
+  name?: string
   description: string
+  company?: string
+  cargo?: string
+  grade?: number
+  picture?: string
 }
 
 export type Navegacao = {
