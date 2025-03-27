@@ -201,9 +201,9 @@ const dataConst: dataConstTypes = {
     },
     "sobre": {
       "title": "Sobre mim",
-      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em contencioso tributário e elaboração de contratos nacionais e internacionais. Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior.  Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
+      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em contencioso tributário e elaboração de contratos nacionais e internacionais. Atualmente, faço parte do quadro de advogados do escritório Napoleão & Tajra.  Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior. Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
       "description2": "Minha trajetória inclui conquistas significativas em competições internacionais de Direito Internacional, como a Philip C. Jessup International Law Moot Court Competition.",
-      "description3": "Idiomas: Prtuguês, Inglês e Japonês."
+      "description3": "Idiomas: Português, Inglês e Japonês."
     }
   }
 }
