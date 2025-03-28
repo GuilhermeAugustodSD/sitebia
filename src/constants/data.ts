@@ -39,16 +39,16 @@ const dataConst: dataConstTypes = {
       {"label": "Contact Us", "link": "contato"}
     ],
     "areas": [
-      {title: "National and International Contracts", hat: "Corporate and Business", icon: "TbContract"},
-      {title: "Corporate agreements", hat: "Corporate and Business", icon: "IoIosPeople"},
-      {title: "Due Diligence for Investment", hat: "Corporate and Business", icon: "PiFileMagnifyingGlassDuotone"},
-      {title: "Advisory and Consultancy Services for Start-ups ", hat: "Corporate and Business", icon: "HiOutlineLightBulb"},
-      {title: "Partnership and Investment Contracts", hat: "Corporate, Business & Private Individuals", icon: "FaHandshakeSimple"},
-      {title: "National and international compliance", hat: "Corporate and Business", icon: "GiWorld"},
-      {title: "Business Litigation", hat: "Corporate, Business & Private Individuals", icon: "VscLaw"},
-      {title: "Capital Market Advisory Services and Representation", hat: "Corporate and Private Individuals", icon: "AiOutlineStock"},
-      {title: "Bankruptcy Protection", hat: "Corporate and Business", icon: "MdOutlineBusiness"},
-      {title: "Immigration and Naturalisation", hat: "Private individuals", icon: "MdModeOfTravel"}
+      {title: "National and International Contracts", hat: "Corporate and Business", icon: "TbContract", slug: "/contratos-nacionais-internacionais"},
+      {title: "Corporate agreements", hat: "Corporate and Business", icon: "IoIosPeople", slug: "/contratos-societarios"},
+      {title: "Due Diligence for Investment", hat: "Corporate and Business", icon: "PiFileMagnifyingGlassDuotone", slug: "/due-diligence-investimentos"},
+      {title: "Advisory and Consultancy Services for Start-ups ", hat: "Corporate and Business", icon: "HiOutlineLightBulb", slug: "/assessoria-startups"},
+      {title: "Partnership and Investment Contracts", hat: "Corporate, Business & Private Individuals", icon: "FaHandshakeSimple", slug: "/contratos-parcerias-investimentos"},
+      {title: "National and international compliance", hat: "Corporate and Business", icon: "GiWorld", slug: "/compliance-nacional-internacional"},
+      {title: "Business Litigation", hat: "Corporate, Business & Private Individuals", icon: "VscLaw", slug: "/cobrancas-litigios-empresariais"},
+      {title: "Capital Market Advisory Services and Representation", hat: "Corporate and Private Individuals", icon: "AiOutlineStock", slug: "/mercado-de-capitais"},
+      {title: "Bankruptcy Protection", hat: "Corporate and Business", icon: "MdOutlineBusiness", slug: "/recuperacao-judicial-extrajudicial"},
+      {title: "Immigration and Naturalisation", hat: "Private individuals", icon: "MdModeOfTravel", slug: "/imigracao-naturalizacao"}
     ],
     "depoimentos": [
       {
@@ -129,16 +129,16 @@ const dataConst: dataConstTypes = {
       {"label": "Entre em Contato", "link": "contato"}
     ],
     "areas": [
-      {title: "Contratos Nacionais e Internacionais", hat: "Empresarial", icon: "TbContract"},
-      {title: "Contratos Societários", hat: "Empresarial", icon: "IoIosPeople"},
-      {title: "Due Diligence para Investimentos", hat: "Empresarial", icon: "PiFileMagnifyingGlassDuotone"},
-      {title: "Acessoria para StartUps", hat: "Consultoria", icon: "HiOutlineLightBulb"},
-      {title: "Contratos de Parcerias e Investimentos", hat: "Empresarial", icon: "FaHandshakeSimple"},
-      {title: "Compliance Nacional e Internacional", hat: "Empresarial", icon: "GiWorld"},
-      {title: "Ações de Cobranças e outros Litígios Empresariais", hat: "Empresarial e PF", icon: "VscLaw"},
-      {title: "Assesoria e representação no Mercado de Capitais", hat: "Empresarial e PF", icon: "AiOutlineStock"},
-      {title: "Recuperação Judicial e Extrajudicial", hat: "Empresarial", icon: "MdOutlineBusiness"},
-      {title: "Processos de Imigração e Naturalização", hat: "Pessoa Física", icon: "MdModeOfTravel"}
+      {title: "Contratos Nacionais e Internacionais", hat: "Empresarial", icon: "TbContract", slug: "/contratos-nacionais-internacionais" },
+      {title: "Contratos Societários", hat: "Empresarial", icon: "IoIosPeople", slug: "/contratos-societarios" },
+      {title: "Due Diligence para Investimentos", hat: "Empresarial", icon: "PiFileMagnifyingGlassDuotone", slug: "/due-diligence-investimentos" },
+      {title: "Assessoria para StartUps", hat: "Consultoria", icon: "HiOutlineLightBulb", slug: "/assessoria-startups" },
+      {title: "Contratos de Parcerias e Investimentos", hat: "Empresarial", icon: "FaHandshakeSimple", slug: "/contratos-parcerias-investimentos" },
+      {title: "Compliance Nacional e Internacional", hat: "Empresarial", icon: "GiWorld", slug: "/compliance-nacional-internacional" },
+      {title: "Ações de Cobranças e outros Litígios Empresariais", hat: "Empresarial e PF", icon: "VscLaw", slug: "/cobrancas-litigios-empresariais" },
+      {title: "Assessoria e representação no Mercado de Capitais", hat: "Empresarial e PF", icon: "AiOutlineStock", slug: "/mercado-de-capitais" },
+      {title: "Recuperação Judicial e Extrajudicial", hat: "Empresarial", icon: "MdOutlineBusiness", slug: "/recuperacao-judicial-extrajudicial" },
+      {title: "Processos de Imigração e Naturalização", hat: "Pessoa Física", icon: "MdModeOfTravel", slug: "/imigracao-naturalizacao" }
     ],
     "depoimentos": [
       {
@@ -201,9 +201,9 @@ const dataConst: dataConstTypes = {
     },
     "sobre": {
       "title": "Sobre mim",
-      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em contencioso tributário e elaboração de contratos nacionais e internacionais. Atualmente, faço parte do quadro de advogados do escritório Napoleão & Tajra.  Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior. Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
+      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em contencioso tributário e elaboração de contratos nacionais e internacionais. Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior.  Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
       "description2": "Minha trajetória inclui conquistas significativas em competições internacionais de Direito Internacional, como a Philip C. Jessup International Law Moot Court Competition.",
-      "description3": "Idiomas: Português, Inglês e Japonês."
+      "description3": "Idiomas: Prtuguês, Inglês e Japonês."
     }
   }
 }
