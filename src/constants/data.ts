@@ -117,7 +117,7 @@ const dataConst: dataConstTypes = {
   },
   "pt": {
     "header": {
-      "title": "Advocacia de Exelência em Brasília",
+      "title": "Advocacia de Excelência em Brasília",
       "firstDescription": "Advocacia especializada em direito empresarial societário, contratos, planejamento sucessório e mercado de capitais, localizada no coração do Brasil, combina vasta experiência acadêmica e profissional e oferece conhecimento teórico profundo e práticas legais atualizadas, com um enfoque em soluções personalizadas para o sucesso e crescimento dos clientes.",
       "secondDescription": "Proporcionando um porto seguro para questões legais, com conselhos guiados pelo comprometimento com a inovação que antecipam tendências. Atendendo tanto empresas estabelecidas quanto startups, promove crescimento sustentável através de consultoria e representação legal que transcende o tradicional, trazendo soluções personalizadas refletindo uma dedicação genuína ao sucesso do cliente."
     },
