@@ -1,6 +1,6 @@
 import { use } from "react";
 import Header from "@/components/Header";
-import AreaPageComponent from "@/pages/AreaPage";
+import AreaPageComponent from "@/components/AreaPageComponent";
 
 type Params = {
   params: Promise<{
