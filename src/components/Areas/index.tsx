@@ -41,13 +41,13 @@ export default function Areas() {
           {
             dataConst[language].areas.map((area, index) => {
               const IconComponent = iconMap[area.icon as keyof typeof iconMap];
-              
               return (
               <BoxArea
                 key={`${index}-${area.hat}`}
                 title={area.title}
                 hat={area.hat}
                 icon={<IconComponent size={40} color='var(--primary-color)'/>}
+                slug={area.slug}
               />
             );})
           }

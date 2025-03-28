@@ -1,0 +1,77 @@
+.sectionHeader {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 27%, rgba(0, 0, 0, 0) 100%),
+              url('../../../public/image-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right; // importante para manter o congresso visível
+
+  height: 93.9vh;
+  width: 100%;
+  padding: 10px var(--padding-x);
+
+  display: flex;
+  align-items: center;
+
+  .words {
+    max-width: 740px;
+    width: 100%;
+    color: var(--font-color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      color: var(--font-color-white);
+      font-weight: 700;
+      font-size: clamp(28px, 5vw, 56px);
+    }
+
+    hr {
+      width: 155px;
+      background-color: var(--primary-color);
+      height: 4px;
+      border: none;
+    }
+
+    p {
+      font-family: var(--font-raleway);
+      font-weight: 500;
+      font-size: clamp(16px, 2.3vw, 18px);
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    text-align: center;
+    background-position: center; // ajuste para manter o congresso centralizado no mobile
+
+    .words {
+      align-items: center;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      hr {
+        margin: 0 auto;
+      }
+
+      .second {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 20px;
+
+    .words {
+      gap: 15px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

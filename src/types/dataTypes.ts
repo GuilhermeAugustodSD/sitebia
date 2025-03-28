@@ -35,6 +35,7 @@ export type Areas = {
   title: string
   hat: string
   icon: any
+  slug: string
 }
 
 export type LanguageContent = {

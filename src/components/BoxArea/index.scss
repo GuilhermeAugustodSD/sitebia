@@ -22,21 +22,34 @@
     border: 3px solid var(--primary-color);
   }
 
-  .words {
+  a {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: space-between;
+    height: 100%;
 
-    small {
-      font-size: 14px;
-      font-family: var(--font-inter);
-      font-weight: 400;
+    @media (max-width: 768px) {
+      max-width: 300px;
+      min-height: max-content;
     }
 
-    span {
-      font-size: 20px;
-      font-family: var(--font-inter);
-      font-weight: 700;
+    .words {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  
+      small {
+        font-size: 14px;
+        font-family: var(--font-inter);
+        font-weight: 400;
+      }
+  
+      span {
+        font-size: 20px;
+        font-family: var(--font-inter);
+        font-weight: 700;
+      }
     }
   }
+
 }

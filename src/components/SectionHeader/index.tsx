@@ -8,7 +8,9 @@ export default function SectionHeader() {
   const { language } = useLanguage();
 
   return (
-    <section className='sectionHeader' id='home'>
+    <section className="sectionHeader" id="home"
+    
+    >
       <div className='words'>
         <h1>{dataConst[language].header.title}</h1>
         <hr />
