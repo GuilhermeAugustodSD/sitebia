@@ -33,6 +33,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/* Google Analytics */}
+        <link rel="preload" as="image" href="https://www.beatrizdantas.adv.br/_next/static/media/image-1.dedcf7b8.jpg" fetchPriority="high" />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-4LV1XJLYYS"
