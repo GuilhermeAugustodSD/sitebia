@@ -142,15 +142,15 @@ const dataConst: dataConstTypes = {
     ],
     "depoimentos": [
       {
-        "empresa": "Eletrobrás",
-        "company": "Eletrobrás",
-        "name": "Name Eletrobrás",
-        "cargo": "Presidente",
-        "avatar": "/avatar.png",
-        "picture": "/avatar.png",
-        "grade": 4,
+        "empresa": "D'Leads",
+        "company": "D'Leads",
+        "name": "Vinícius Valim",
+        "cargo": "Co-fundador",
+        "avatar": "/vini.png",
+        "picture": "/vini.png",
+        "grade": 5,
         "link": "https://escolhaaescola.correiobraziliense.com.br",
-        "description": "Participar desse projeto foi transformador. Aprendi muito, cresci pessoal e profissionalmente, e sou grato pela oportunidade de fazer parte de algo tão significativo e inspirador.",
+        "description": "Quero deixar registrado o quanto estou satisfeito com o trabalho da Dra. Beatriz Helena. Ela tem sido uma parceira incrível aqui na empresa, sempre trazendo soluções jurídicas rápidas, claras e que realmente funcionam. Além de ser super profissional, ela manda muito bem no que faz e passa uma segurança que a gente precisa pra tocar o negócio com tranquilidade. Recomendo de olhos fechados!",
       },
       {
         "empresa": "Eletrobrás",

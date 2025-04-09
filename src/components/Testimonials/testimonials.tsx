@@ -115,3 +115,25 @@ export default function Testimonials({ reviews }: Props) {
   );
 }
 
+
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const res = await fetch('http://static.beatrizdantas.adv.br:8080/reviews.json');
+    const data = await res.json();
+
+    return {
+      props: {
+        reviews: data.reviews || [],
+      },
+      revalidate: 3600,
+    };
+  } catch (err) {
+    console.error(err);
+    return {
+      props: {
+        reviews: [],
+      },
+      revalidate: 3600,
+    };
+  }
+};
