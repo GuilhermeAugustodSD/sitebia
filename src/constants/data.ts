@@ -20,7 +20,6 @@ const iconMap = {
   AiOutlineStock: AiOutlineStock,
   MdModeOfTravel: MdModeOfTravel,
   IoIosPeople: IoIosPeople
-  // adicione outros ícones aqui conforme for usando
 };
 
 
@@ -28,8 +27,8 @@ const dataConst: dataConstTypes = {
   "en": {
     "header": {
       "title": "Excellence Law Firm in Brasília",
-      "firstDescription": "Law firm specializing in corporate business law, contracts, succession planning and capital markets, located in the heart of Brazil, combines vast academic and professional experience and offers in-depth theoretical knowledge and up-to-date legal practices, with a focus on personalized solutions for the success and growth of customers.",
-      "secondDescription": "Providing a safe haven for legal issues, with advice guided by a commitment to innovation that anticipates trends. Serving both established companies and startups, it promotes sustainable growth through consultancy and legal representation that transcends the traditional, bringing personalized solutions reflecting a genuine dedication to client success."
+      "firstDescription": "A law firm specializing in corporate law, contracts and capital markets, located in the heart of Brazil, it combines vast academic and professional experience with a focus on customized solutions for the success and growth of your company.",
+      "secondDescription": "Providing a safe haven for legal issues for both established companies and startups, promoting sustainable growth through legal advice and representation that transcends the traditional, bringing customized solutions reflecting a genuine dedication to client success."
     },
     "navegacao": [
       {"label": "Home", "link": "home"},
@@ -102,11 +101,11 @@ const dataConst: dataConstTypes = {
     },
     "missao": {
       "title": "Legacy",
-      "description1": "Provide excellent business law services, personalized and focused on the specific needs of each client through a unique combination of professional and academic experience to offer strategic, innovative and effective legal consultancy and representation, ensuring not only legal compliance, but also growth and the prosperity of our customers' businesses."
+      "description1": "Providing excellent business law services, personalized and focused on the specific needs of each client to offer strategic, innovative and effective legal advice and representation, guaranteeing not only legal compliance, but also the growth and prosperity of our clients' businesses."
     },
     "valores": {
       "title": "Values",
-      "description1": "Having a law firm differentiated by its ability to deliver personalized, innovative and high-impact legal solutions. Aspire to build lasting relationships with customers, based on trust, excellence and results, contributing significantly to the success and evolution of the business scenario."
+      "description1": "A legal practice capable of delivering personalized, innovative and high-impact legal solutions to build lasting relationships with clients, based on trust, excellence and results."
     },
     "sobre": {
       "title": "About me",
@@ -118,8 +117,8 @@ const dataConst: dataConstTypes = {
   "pt": {
     "header": {
       "title": "Advocacia de Excelência em Brasília",
-      "firstDescription": "Advocacia especializada em direito empresarial societário, contratos, planejamento sucessório e mercado de capitais, localizada no coração do Brasil, combina vasta experiência acadêmica e profissional e oferece conhecimento teórico profundo e práticas legais atualizadas, com um enfoque em soluções personalizadas para o sucesso e crescimento dos clientes.",
-      "secondDescription": "Proporcionando um porto seguro para questões legais, com conselhos guiados pelo comprometimento com a inovação que antecipam tendências. Atendendo tanto empresas estabelecidas quanto startups, promove crescimento sustentável através de consultoria e representação legal que transcende o tradicional, trazendo soluções personalizadas refletindo uma dedicação genuína ao sucesso do cliente."
+      "firstDescription": "Advocacia especializada em direito empresarial societário, contratos e mercado de capitais, localizada no coração do Brasil, combina vasta experiência acadêmica e profissional com um enfoque em soluções personalizadas para o sucesso e crescimento da sua empresas.",
+      "secondDescription": "Proporcionando um porto seguro para questões legais, tanto para empresas estabelecidas quanto para startups, promovendo crescimento sustentável através de consultoria e representação legal que transcende o tradicional, trazendo soluções personalizadas refletindo uma dedicação genuína ao sucesso do cliente."
     },
     "navegacao": [
       {"label": "Inicio", "link": "home"},
@@ -193,11 +192,11 @@ const dataConst: dataConstTypes = {
     },
     "missao": {
       "title": "Missão",
-      "description1": "Prover serviços de advocacia empresarial de excelência, personalizados e focados nas necessidades específicas de cada cliente por meio uma combinação única de experiência profissional e acadêmica para oferecer consultoria e representação jurídica estratégica, inovadora e eficaz, garantindo não apenas a conformidade legal, mas também o crescimento e a prosperidade dos negócios dos nossos clientes."
+      "description1": "Prover serviços de advocacia empresarial de excelência, personalizados e focados nas necessidades específicas de cada cliente para oferecer consultoria e representação jurídica estratégica, inovadora e eficaz, garantindo não apenas a conformidade legal, mas também o crescimento e a prosperidade dos negócios dos nossos clientes."
     },
     "valores": {
       "title": "Valores",
-      "description1": "Ter uma advocacia diferenciada pela capacidade de entregar soluções jurídicas personalizadas, inovadoras e de alto impacto. Aspirar a construir relações duradouras com os clientes, fundamentadas na confiança, excelência e resultados, contribuindo significativamente para o sucesso e a evolução do cenário empresarial."
+      "description1": "Advocacia capaz de entregar soluções jurídicas personalizadas, inovadoras e de alto impacto para construir relações duradouras com os clientes, fundamentadas na confiança, excelência e resultados."
     },
     "sobre": {
       "title": "Sobre mim",
