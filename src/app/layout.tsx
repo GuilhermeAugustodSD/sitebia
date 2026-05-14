@@ -21,7 +21,29 @@ export const metadata: Metadata = {
   description: "Advocacia especializada em direito empresarial, societário, contratos, sucessão e mercado de capitais. No centro do Brasil, une experiência acadêmica e prática, com soluções jurídicas personalizadas e atualizadas para o crescimento e sucesso dos clientes.",
   keywords: "Advocacia empresarial, Direito empresarial, Direito societário, Planejamento sucessório, Contratos empresariais, Mercado de capitais, Advogada empresarial, Escritório de advocacia empresarial, Assessoria jurídica empresarial, Soluções jurídicas personalizadas, Experiência acadêmica e prática, Estratégias jurídicas para empresas, Direito para empresas, Consultoria jurídica empresarial, Direito das sociedades, Direito contratual empresarial, Advocacia no Brasil, Escritório no centro do Brasil, Especialista em direito societário, Advogada de empresas",
   robots: "index, follow",
-  authors: [{ name: "Beatriz Dantas" }]
+  authors: [{ name: "Beatriz Dantas" }],
+  openGraph: {
+    title: "Beatriz Dantas - Advogada Empresarial",
+    description: "Advocacia especializada em direito empresarial, societário, contratos, sucessão e mercado de capitais.",
+    url: "https://www.beatrizdantas.adv.br",
+    siteName: "Beatriz Dantas Advocacia",
+    images: [
+      {
+        url: "https://www.beatrizdantas.adv.br/logo-bia.png",
+        width: 1200,
+        height: 630,
+        alt: "Beatriz Dantas Advocacia"
+      }
+    ],
+    locale: "pt_BR",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Beatriz Dantas - Advogada Empresarial",
+    description: "Advocacia especializada em direito empresarial, societário, contratos, sucessão e mercado de capitais.",
+    images: ["https://www.beatrizdantas.adv.br/logo-bia.png"]
+  }
 };
 
 export default function RootLayout({

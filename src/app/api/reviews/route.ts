@@ -3,11 +3,9 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   try {
     const res = await fetch(
-      `http://static.beatrizdantas.adv.br:8080/reviews.json`
+      `https://static.beatrizdantas.adv.br:8080/reviews.json`
     );
     const data = await res.json();
-
-    console.log('data', data);
 
     let reviews = [];
 
@@ -40,7 +38,7 @@ export async function GET() {
 
     return NextResponse.json({ reviews });
   } catch (error) {
-    console.error('Erro ao buscar avaliações:', error);
+    // Em produção, apenas retorna erro genérico sem expor detalhes
     return NextResponse.json({ message: 'Erro ao buscar avaliações.' }, { status: 500 });
   }
 }

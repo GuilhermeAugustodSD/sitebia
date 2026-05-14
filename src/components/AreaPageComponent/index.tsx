@@ -1,39 +1,66 @@
 "use client";
 
+import "./index.scss";
 import { useLanguage } from "@/components/Context/Language";
-import { dataConst, iconMap } from "@/constants/data";
-import { MdOutlineBusiness } from "react-icons/md"; // fallback para ícone
-import { use } from "react";
-import Header from "@/components/Header";
+import { dataConst } from "@/constants/data";
 import SectionHeaderCustom from "@/components/SectionHeaderCustom";
 
-type Params = {
-  params: Promise<{
-    slug: string;
-  }>;
+export type WordPressPage = {
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  excerpt?: {
+    rendered: string;
+  };
 };
-export default function AreaPageComponent({ params }: Params) {
+
+type AreaPageComponentProps = {
+  slug: string;
+  wpPage: WordPressPage | null;
+};
+
+function stripHtml(html = "") {
+  return html.replace(/<[^>]*>/g, "").trim();
+}
+
+export default function AreaPageComponent({ slug, wpPage }: AreaPageComponentProps) {
   const { language } = useLanguage();
-  const { slug } = use(params);
 
   const areas = dataConst[language]?.areas;
-  console.log(areas);
-  console.log(language);
-  
   const area = areas?.find((area) => area.slug === `/${slug}`);
 
-  if (!area) return <div>Área não encontrada</div>;
-
-  const Icon = iconMap[area.icon as keyof typeof iconMap] ?? MdOutlineBusiness;
+  const title = wpPage?.title.rendered || area?.title || "Área de Atuação";
+  const excerpt = stripHtml(wpPage?.excerpt?.rendered);
+  const content = wpPage?.content.rendered;
+  const emptyMessage = area
+    ? "Conteúdo em atualização no WordPress."
+    : "Área não encontrada no WordPress.";
 
   return (
     <div className="mainConteiner">
-
       <SectionHeaderCustom
-        title={area.title}
-        firstDescription="Em breve"
+        title={title}
+        firstDescription={excerpt || "Conteúdo em atualização."}
         secondDescription=""
       />
+
+      {content ? (
+        <section className="areaContent">
+          <div
+            className="areaContentInner"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+        </section>
+      ) : (
+        <section className="areaContent">
+          <div className="areaContentInner">
+            <p>{emptyMessage}</p>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

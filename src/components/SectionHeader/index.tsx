@@ -8,10 +8,13 @@ export default function SectionHeader() {
   const { language } = useLanguage();
 
   return (
-    <section className="sectionHeader" id="home"
-    
-    >
+    <section className="sectionHeader" id="home">
       <div className='words'>
+        <div className='credentials'>
+          <span className='credential'>OAB/DF</span>
+          <span className='credential'>{language === 'pt' ? '5+ Anos de Experiência' : '5+ Years Experience'}</span>
+        </div>
+        
         <h1>{dataConst[language].header.title}</h1>
         <hr />
         <p>{dataConst[language].header?.firstDescription}</p>

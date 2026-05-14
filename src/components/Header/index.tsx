@@ -19,7 +19,6 @@ export default function Header({
   description,
   menuItems,
 }: HeaderTypes2) {
-  const [isNavShown, setIsNavShown] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
   const { language, setLanguage } = useLanguage();
@@ -70,7 +69,15 @@ export default function Header({
         </div>
       </div>
 
-      <MdOutlineMenu size={40} className="menu" onClick={() => setShowModal(!showModal)} />
+      <button 
+        className="menu"
+        onClick={() => setShowModal(!showModal)}
+        aria-label="Abrir menu de navegação"
+        aria-expanded={showModal}
+        type="button"
+      >
+        <MdOutlineMenu />
+      </button>
 
       <Modal isActive={showModal} />
     </header>

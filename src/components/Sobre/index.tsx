@@ -2,7 +2,7 @@
 import React from 'react';
 import './index.scss';
 import Image from 'next/image';
-import Perfil from '../../../public/perfil.jpg'
+import Perfil from '../../../public/image-5.jpg'
 import { useLanguage } from '../Context/Language';
 import IconIntagram from '../Svgs/instagram';
 import IconLinkedin from '../Svgs/linkedin';

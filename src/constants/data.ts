@@ -109,7 +109,7 @@ const dataConst: dataConstTypes = {
     },
     "sobre": {
       "title": "About me",
-      "description1": "Lawyer specialist in Corporate Law and Capital Markets at IBMEC, with solid experience in tax litigation and drafting of national and international contracts. Throughout my career, I have acted in negotiations involving strategic partnerships and representation of interests both in Brazil and abroad.  At IOM - International organization for Migration  (UN Migration), I participated in the implementation of national and international projects and partnerships.",
+      "description1": "Lawyer specialist in Corporate Law and Capital Markets at IBMEC, with solid experience in drafting of national and international contracts. Throughout my career, I have acted in negotiations involving strategic partnerships and representation of interests both in Brazil and abroad.  At IOM - International organization for Migration  (UN Migration), I participated in the implementation of national and international projects and partnerships.",
       "description2": "My career also includes significant achievements in international law competitions, such as the Philip C. Jessup International Law Moot Court Competition.",
       "description3": "Languages: Portuguese, English and Japanese."
     }
@@ -200,7 +200,7 @@ const dataConst: dataConstTypes = {
     },
     "sobre": {
       "title": "Sobre mim",
-      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em contencioso tributário e elaboração de contratos nacionais e internacionais. Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior.  Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
+      "description1": "Advogada especializada em Direito Societário e Mercado de Capitais pelo IBMEC, com sólida experiência em elaboração de contratos nacionais e internacionais. Ao longo da minha carreira, atuei, juntamente a outros advogados brilhantes, em negociações envolvendo parcerias estratégicas e representação de interesses tanto no Brasil quanto no exterior.  Com passagem pela ONU Migração (Agência da Organização das Nações Unidas para Migrações), participei na implementação de projetos e parcerias nacionais internacionais.",
       "description2": "Minha trajetória inclui conquistas significativas em competições internacionais de Direito Internacional, como a Philip C. Jessup International Law Moot Court Competition.",
       "description3": "Idiomas: Português, Inglês e Japonês."
     }

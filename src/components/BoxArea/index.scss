@@ -1,53 +1,97 @@
 .boxArea {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 32px;
-  padding: 20px;
-  background-color: #222121;
-  border-radius: 7px;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(34, 33, 33, 0.9) 0%, rgba(40, 40, 40, 0.95) 100%);
+  border-radius: 16px;
   cursor: pointer;
-  border: 3px solid transparent;
+  border: 1px solid rgba(183, 150, 91, 0.2);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(183, 150, 91, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 
-  max-width: 210px;
-  min-height: 250px;
-  box-shadow: 2px 2px 2px #ffb2242b;
+  width: 280px;
+  min-height: 200px;
+
+  // Elemento decorativo interno
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(183, 150, 91, 0.05);
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
 
   @media (max-width: 768px) {
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px;
     min-height: max-content;
   }
   
   &:hover {
-    border: 3px solid var(--primary-color);
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(183, 150, 91, 0.3);
+
+    &::before {
+      background: rgba(183, 150, 91, 0.1);
+      transform: scale(1.2);
+    }
   }
 
   a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 16px;
     height: 100%;
+    position: relative;
+    z-index: 2;
 
-    @media (max-width: 768px) {
-      max-width: 300px;
-      min-height: max-content;
+    // Ícone com melhor apresentação
+    svg {
+      transition: all 0.3s ease;
+      align-self: flex-start;
+    }
+
+    &:hover svg {
+      transform: scale(1.1);
+      filter: brightness(1.2);
     }
 
     .words {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      flex: 1;
   
       small {
-        font-size: 14px;
-        font-family: var(--font-inter);
-        font-weight: 400;
+        font-size: 11px;
+        font-family: var(--font-raleway);
+        font-weight: 500;
+        color: rgba(183, 150, 91, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
       }
   
       span {
-        font-size: 20px;
-        font-family: var(--font-inter);
-        font-weight: 700;
+        font-size: clamp(14px, 1.1vw, 16px);
+        font-family: var(--font-raleway);
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--font-color-white);
       }
     }
   }

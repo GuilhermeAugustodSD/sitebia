@@ -1,0 +1,41 @@
+.areaContent {
+  width: 100%;
+  padding: 80px var(--padding-x);
+  background: var(--font-color-white);
+  color: var(--bg-preto);
+
+  .areaContentInner {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: var(--font-raleway);
+    font-size: clamp(16px, 1.2vw, 18px);
+    line-height: 1.8;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin: 32px 0 16px;
+      font-family: var(--font-playfar);
+    }
+
+    ul,
+    ol {
+      margin: 20px 0 20px 24px;
+    }
+
+    li {
+      list-style: initial;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .areaContent {
+    padding: 48px 20px;
+  }
+}

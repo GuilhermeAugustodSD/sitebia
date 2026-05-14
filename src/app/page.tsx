@@ -12,6 +12,7 @@ import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
 import TestimonialsPage from "@/components/Testimonials";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { GetStaticProps } from "next";
 
 type Review = {
@@ -42,10 +43,10 @@ export default async function Home() {
   return (
     <div className="mainConteiner">
       <SEO
-        title="Teste titulo"
-        description="TEste desc"
-        imageUrl="teste img"
-        url="teste url"
+        title="Beatriz Dantas - Advocacia Empresarial de Excelência em Brasília"
+        description="Advocacia especializada em direito empresarial, societário, contratos e mercado de capitais. No centro do Brasil, une experiência acadêmica e prática, com soluções jurídicas personalizadas para o crescimento e sucesso da sua empresa."
+        imageUrl="https://www.beatrizdantas.adv.br/logo-bia.png"
+        url="https://www.beatrizdantas.adv.br"
       />
       <Header
         title={"siteTitle"}
@@ -71,6 +72,8 @@ export default async function Home() {
       </main>
 
       <Footer />
+      
+      <FloatingWhatsApp />
     </div>
   );
 }

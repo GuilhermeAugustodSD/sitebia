@@ -41,9 +41,23 @@ export default function Modal({ isActive }: ModalProps) {
   };
 
   return (
-    <div className={`offcanvas ${isModalShown ? "active" : ""}`}>
+    <>
+      {isModalShown && <div className="modal-overlay" />}
+      <div 
+        className={`offcanvas ${isModalShown ? "active" : ""}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu de navegação"
+      >
       <div className="modal-content" ref={modalRef}>
-        <FaX size={12} onClick={closeModal} />
+        <button 
+          onClick={closeModal}
+          aria-label="Fechar menu"
+          type="button"
+          className="close-button"
+        >
+          <FaX size={12} />
+        </button>
 
         <nav className='navMenu'>
           <ul>
@@ -65,6 +79,7 @@ export default function Modal({ isActive }: ModalProps) {
         </div>
 
       </div>
-    </div>
+      </div>
+    </>
   );
 }

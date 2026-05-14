@@ -1,0 +1,224 @@
+.credibility-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .credibility-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--bg-preto);
+      margin-bottom: 20px;
+      font-family: var(--font-playfar);
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #64748b;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .badge-item {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--badge-color);
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+      }
+
+      .badge-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        background: var(--badge-color);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        min-width: 60px;
+      }
+
+      .badge-content {
+        flex: 1;
+
+        h3 {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: var(--bg-preto);
+          margin: 0 0 5px 0;
+          font-family: var(--font-raleway);
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #64748b;
+          margin: 0;
+          line-height: 1.4;
+        }
+      }
+
+      @media (max-width: 768px) {
+        padding: 25px 20px;
+        gap: 15px;
+
+        .badge-icon {
+          width: 50px;
+          height: 50px;
+          font-size: 1.3rem;
+        }
+
+        .badge-content {
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          p {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+
+  .trust-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 40px 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .trust-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--bg-preto);
+        margin: 0 0 15px 0;
+        font-family: var(--font-raleway);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #64748b;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        padding: 30px 20px;
+
+        .trust-icon {
+          font-size: 2.5rem;
+          height: 60px;
+          margin-bottom: 15px;
+        }
+
+        h4 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .credibility-section {
+    padding: 60px 0;
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .credibility-header {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .badges-grid {
+      margin-bottom: 50px;
+    }
+  }
+}
