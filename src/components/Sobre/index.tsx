@@ -14,7 +14,7 @@ export default function Sobre() {
     <section className='sectionSobre' id='sobre'>
 
       <div className='containerImage'>
-        <Image src={Perfil} alt='Foto de perfil Beatriz Dantas' title='Foto de perfil Beatriz Dantas'/>
+        <Image src={Perfil} alt='Foto de perfil Beatriz Dantas' title='Foto de perfil Beatriz Dantas' priority />
 
       </div>
 
