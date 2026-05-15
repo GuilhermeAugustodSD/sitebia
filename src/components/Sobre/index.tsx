@@ -2,10 +2,11 @@
 import React from 'react';
 import './index.scss';
 import Image from 'next/image';
-import Perfil from '../../../public/image-5.webp'
 import { useLanguage } from '../Context/Language';
 import IconIntagram from '../Svgs/instagram';
 import IconLinkedin from '../Svgs/linkedin';
+
+const FOTO_PERFIL = 'https://raw.githubusercontent.com/GuilhermeAugustodSD/sitebia/b8459b4cefde26d6ff5e7ff6e2f0203cf2b8e051/public/image-5.jpg';
 
 export default function Sobre() {
   const { content } = useLanguage();
@@ -14,8 +15,14 @@ export default function Sobre() {
     <section className='sectionSobre' id='sobre'>
 
       <div className='containerImage'>
-        <Image src={Perfil} alt='Foto de perfil Beatriz Dantas' title='Foto de perfil Beatriz Dantas' priority />
-
+        <Image
+          src={FOTO_PERFIL}
+          alt='Foto de perfil Beatriz Dantas'
+          title='Foto de perfil Beatriz Dantas'
+          width={800}
+          height={1200}
+          priority
+        />
       </div>
 
       <div className='words'>
